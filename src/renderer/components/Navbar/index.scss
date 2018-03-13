@@ -1,0 +1,64 @@
+@import 'import';
+
+.navbar {
+  -webkit-user-select: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99999;
+  height: $navHeight;
+  background: $c-primary;
+  transition: 0.3s ease-in-out;
+}
+.macDragFix {
+  -webkit-app-region: drag;
+}
+.drabar {
+  -webkit-app-region: drag;
+  height: 100%;
+  flex: 1;
+}
+
+.inVideo {
+  opacity: 0;
+  background: transparent;
+  &:hover {
+    opacity: 1;
+  }
+  .headerBar {
+    background: linear-gradient(45deg, #000, transparent);
+  }
+  .subBar {
+    display: none;
+  }
+}
+
+.headerBar {
+  display: flex;
+  align-items: center;
+  height: 1.5rem;
+  position: relative;
+  padding: 0 0.5rem;
+}
+.subBar {
+  padding: 0 0.5rem;
+  cursor: default;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 2.5rem;
+  padding-bottom: 0.2rem;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.left,
+.right {
+  width: 5rem;
+  display: flex;
+  align-items: center;
+}
+.right {
+  justify-content: flex-end;
+}

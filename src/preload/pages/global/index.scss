@@ -1,0 +1,19 @@
+@import 'import';
+@import 'scroll';
+html,
+body {
+  -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
+  background: #fff;
+}
+body {
+}
+a:focus {
+  text-decoration: none;
+}
+*:focus {
+  outline: none;
+}
+* {
+  -webkit-font-smoothing: antialiased;
+}

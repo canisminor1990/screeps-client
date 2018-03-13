@@ -1,0 +1,46 @@
+@import 'import';
+
+.box {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.cell {
+  display: flex;
+  margin-bottom: 1rem;
+  align-items: center;
+  > span {
+    width: auto;
+    flex: 1;
+    > span {
+      margin-left: 0.5rem;
+      font-size: 0.8rem;
+      color: #ccc;
+    }
+  }
+}
+
+.title {
+  height: 2rem;
+  width: 6rem;
+  display: flex;
+  align-items: center;
+  margin-right: 0.5rem;
+}
+
+.btnGroup {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn {
+  border-radius: 3rem;
+  margin-bottom: 0.8rem;
+  &:first-child {
+    border: none;
+    background: linear-gradient(45deg, $c-primary, lighten($c-primary, 10%));
+    box-shadow: 0 4px 8px rgba($c-primary, 0.15);
+  }
+}
